@@ -1350,7 +1350,6 @@ public:
     }
     bool needsReleaseNotify() override { return true; }
     void onBuffersDiscarded(const std::vector<sp<GraphicBuffer>>& /*buffers*/) override {}
-    void onBufferDetached(int /*slot*/) {}
 };
 
 TEST_F(BLASTBufferQueueTest, CustomProducerListener) {
